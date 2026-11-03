@@ -1,5 +1,6 @@
 // Лабораторная работа № 1. Вариант 81.
 // Простые проценты.
+// Выполнил : студент группы ПИ-54, Косимов О. Э.
 #include <iostream>
 #include <iomanip>
 #include <limits>
@@ -60,14 +61,3 @@ int main() {
             continue;
         }
 
-        cout << fixed << setprecision(2);
-        if (choice == 1) {
-            cout << "Процентный доход: " << simpleInterest(entry_summ, rate, years) << "\n";
-        }
-        else {
-            cout << "Итоговая сумма: " << totalSimple(entry_summ, rate, years) << "\n";
-        }
-    } while (true);
-
-    return 0;
-}
