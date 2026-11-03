@@ -60,4 +60,15 @@ int main() {
             cout << "Ошибка: сумма, ставка и срок не должны быть отрицательными.\n";
             continue;
         }
+        cout << fixed << setprecision(2);
+        if (choice == 1) {
+            cout << "Процентный доход: " << simpleInterest(entry_summ, rate, years) << "\n";
+        }
+        else {
+            cout << "Итоговая сумма: " << totalSimple(entry_summ, rate, years) << "\n";
+        }
+    } while (true);
+
+    return 0;
+}
 
