@@ -11,12 +11,12 @@ using namespace std;
 
 // Доход по простой процентной ставке.
 double simpleInterest(double entry_summ, double rate, double years) {
-    double result = entry_summ * rate * years / 100.0
+    double result = entry_summ * rate * years / 100.0;
     return result;
 }
 // Итоговая сумма вместе с начисленным доходом.
 double totalSimple(double entry_summ, double rate, double years) {
-    double result = entry_summ + simpleInterest(entry_summ, rate, years)
+    double result = entry_summ + simpleInterest(entry_summ, rate, years);
     return result;
 }
 
