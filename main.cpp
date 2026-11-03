@@ -11,11 +11,13 @@ using namespace std;
 
 // Доход по простой процентной ставке.
 double simpleInterest(double entry_summ, double rate, double years) {
-    return entry_summ * rate * years / 100.0;
+    double result = entry_summ * rate * years / 100.0
+    return result;
 }
 // Итоговая сумма вместе с начисленным доходом.
 double totalSimple(double entry_summ, double rate, double years) {
-    return entry_summ + simpleInterest(entry_summ, rate, years);
+    double result = entry_summ + simpleInterest(entry_summ, rate, years)
+    return result;
 }
 
 
@@ -44,7 +46,7 @@ int main() {
             break;
         }
 
-        if (choice != 1 && choice != 2) {
+        if (choice < 1 || choice > 2) {
             cout << "Ошибка: такого пункта меню нет.\n";
             continue;
         }
